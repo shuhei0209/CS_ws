@@ -1,0 +1,3 @@
+[console_scripts]
+command_input_node = command_input.command_input_node:main
+

@@ -1,0 +1,24 @@
+[4.561s] Invoking command in '/home/ubuntu/CS_ws/build/navigation': PYTHONPATH=/home/ubuntu/CS_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/CS_ws/build/navigation/build --no-deps symlink_data
+[5.477s] running develop
+[6.022s] running egg_info
+[6.022s] creating navigation.egg-info
+[6.025s] writing navigation.egg-info/PKG-INFO
+[6.027s] writing dependency_links to navigation.egg-info/dependency_links.txt
+[6.029s] writing entry points to navigation.egg-info/entry_points.txt
+[6.029s] writing requirements to navigation.egg-info/requires.txt
+[6.029s] writing top-level names to navigation.egg-info/top_level.txt
+[6.030s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[6.037s] reading manifest file 'navigation.egg-info/SOURCES.txt'
+[6.040s] writing manifest file 'navigation.egg-info/SOURCES.txt'
+[6.045s] running build_ext
+[6.046s] Creating /home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation.egg-link (link to .)
+[6.049s] Installing navigation_node script to /home/ubuntu/CS_ws/install/navigation/lib/navigation
+[6.051s] 
+[6.053s] Installed /home/ubuntu/CS_ws/build/navigation
+[6.054s] running symlink_data
+[6.055s] creating /home/ubuntu/CS_ws/install/navigation/share/ament_index
+[6.056s] creating /home/ubuntu/CS_ws/install/navigation/share/ament_index/resource_index
+[6.056s] creating /home/ubuntu/CS_ws/install/navigation/share/ament_index/resource_index/packages
+[6.059s] symbolically linking /home/ubuntu/CS_ws/build/navigation/resource/navigation -> /home/ubuntu/CS_ws/install/navigation/share/ament_index/resource_index/packages
+[6.061s] symbolically linking /home/ubuntu/CS_ws/build/navigation/package.xml -> /home/ubuntu/CS_ws/install/navigation/share/navigation
+[6.153s] Invoked command in '/home/ubuntu/CS_ws/build/navigation' returned '0': PYTHONPATH=/home/ubuntu/CS_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/CS_ws/build/navigation/build --no-deps symlink_data

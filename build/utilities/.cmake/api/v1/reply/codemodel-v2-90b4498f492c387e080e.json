@@ -1,0 +1,233 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"jsonFile" : "directory-.-cf0eadf8b09cc759cddc.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				},
+				{
+					"build" : "utilities__py",
+					"jsonFile" : "directory-utilities__py-748d4b1b7d05ab6ae04d.json",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.12"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "/home/ubuntu/CS_ws/build/utilities/utilities__py",
+					"targetIndexes" : 
+					[
+						5
+					]
+				}
+			],
+			"name" : "",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "utilities",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15,
+						16,
+						17
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_build_utilities_egg::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_build_utilities_egg-f0dffb0b14558e55983e.json",
+					"name" : "ament_cmake_python_build_utilities_egg",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "ament_cmake_python_symlink_utilities::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-ament_cmake_python_symlink_utilities-f46d2b7b0fd7ac437c50.json",
+					"name" : "ament_cmake_python_symlink_utilities",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-bbb6d0e78438a3f00ffc.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities-60f9aaf1dfbb70f4242a.json",
+					"name" : "utilities",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__cpp-6de0887f8a0163ddf2e6.json",
+					"name" : "utilities__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "utilities__py::@da74a1bd0b81fa4cf5c1",
+					"jsonFile" : "target-utilities__py-4547103b4749d434b66a.json",
+					"name" : "utilities__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__rosidl_generator_c-530d4cf5de44ebd421a2.json",
+					"name" : "utilities__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__rosidl_generator_py::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__rosidl_generator_py-558d78910618d2af7ab4.json",
+					"name" : "utilities__rosidl_generator_py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__rosidl_typesupport_c-fe7f5794dcc2ec9c6c82.json",
+					"name" : "utilities__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__rosidl_typesupport_c__pyext-10cc1a84bbec8cd297ac.json",
+					"name" : "utilities__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__rosidl_typesupport_cpp-d693cadc28fe14e07402.json",
+					"name" : "utilities__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__rosidl_typesupport_fastrtps_c-bf1d34fbdbcd75e6996e.json",
+					"name" : "utilities__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__rosidl_typesupport_fastrtps_c__pyext-b21fa56a4d8c908a1efc.json",
+					"name" : "utilities__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__rosidl_typesupport_fastrtps_cpp-dbd2a95adcafc8139abe.json",
+					"name" : "utilities__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__rosidl_typesupport_introspection_c-ce06180a982f4a03146a.json",
+					"name" : "utilities__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__rosidl_typesupport_introspection_c__pyext-db2ab60c1dc61301aff0.json",
+					"name" : "utilities__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities__rosidl_typesupport_introspection_cpp-c9ea61d2a69597d1ecb2.json",
+					"name" : "utilities__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "utilities_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-utilities_uninstall-7bbd3436ed02290f2277.json",
+					"name" : "utilities_uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/ubuntu/CS_ws/build/utilities",
+		"source" : "/home/ubuntu/CS_ws/src/utilities"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 3
+	}
+}

@@ -1,0 +1,11 @@
+source;share/utilities/hook/cmake_prefix_path.ps1
+source;share/utilities/hook/cmake_prefix_path.dsv
+source;share/utilities/hook/cmake_prefix_path.sh
+source;share/utilities/hook/ld_library_path_lib.ps1
+source;share/utilities/hook/ld_library_path_lib.dsv
+source;share/utilities/hook/ld_library_path_lib.sh
+source;share/utilities/local_setup.bash
+source;share/utilities/local_setup.dsv
+source;share/utilities/local_setup.ps1
+source;share/utilities/local_setup.sh
+source;share/utilities/local_setup.zsh

@@ -1,0 +1,14 @@
+{
+	"backtraceGraph" : 
+	{
+		"commands" : [],
+		"files" : [],
+		"nodes" : []
+	},
+	"installers" : [],
+	"paths" : 
+	{
+		"build" : "utilities__py",
+		"source" : "/home/ubuntu/CS_ws/build/utilities/utilities__py"
+	}
+}

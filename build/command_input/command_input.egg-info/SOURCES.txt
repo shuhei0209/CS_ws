@@ -1,0 +1,13 @@
+package.xml
+setup.cfg
+setup.py
+command_input/__init__.py
+command_input/command_input_node.py
+command_input.egg-info/PKG-INFO
+command_input.egg-info/SOURCES.txt
+command_input.egg-info/dependency_links.txt
+command_input.egg-info/entry_points.txt
+command_input.egg-info/requires.txt
+command_input.egg-info/top_level.txt
+command_input.egg-info/zip-safe
+resource/command_input

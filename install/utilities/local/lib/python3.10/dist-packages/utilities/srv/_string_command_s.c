@@ -1,0 +1,1 @@
+/home/ubuntu/CS_ws/build/utilities/rosidl_generator_py/utilities/srv/_string_command_s.c

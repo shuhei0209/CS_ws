@@ -1,0 +1,1 @@
+/home/ubuntu/CS_ws/build/utilities/rosidl_typesupport_fastrtps_c/utilities/srv/detail/string_command__rosidl_typesupport_fastrtps_c.h

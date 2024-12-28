@@ -1,0 +1,17 @@
+running develop
+running egg_info
+writing task_manager.egg-info/PKG-INFO
+writing dependency_links to task_manager.egg-info/dependency_links.txt
+writing entry points to task_manager.egg-info/entry_points.txt
+writing requirements to task_manager.egg-info/requires.txt
+writing top-level names to task_manager.egg-info/top_level.txt
+reading manifest file 'task_manager.egg-info/SOURCES.txt'
+writing manifest file 'task_manager.egg-info/SOURCES.txt'
+running build_ext
+Creating /home/ubuntu/CS_ws/install/task_manager/lib/python3.10/site-packages/task-manager.egg-link (link to .)
+Installing task_manager script to /home/ubuntu/CS_ws/install/task_manager/lib/task_manager
+
+Installed /home/ubuntu/CS_ws/build/task_manager
+running symlink_data
+creating /home/ubuntu/CS_ws/install/task_manager/share/task_manager/launch
+symbolically linking /home/ubuntu/CS_ws/build/task_manager/launch/simulation_launch.py -> /home/ubuntu/CS_ws/install/task_manager/share/task_manager/launch

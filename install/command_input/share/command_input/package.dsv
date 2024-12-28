@@ -1,0 +1,9 @@
+source;share/command_input/hook/pythonpath.ps1
+source;share/command_input/hook/pythonpath.dsv
+source;share/command_input/hook/pythonpath.sh
+source;share/command_input/hook/ament_prefix_path.ps1
+source;share/command_input/hook/ament_prefix_path.dsv
+source;share/command_input/hook/ament_prefix_path.sh
+source;../../build/command_input/share/command_input/hook/pythonpath_develop.ps1
+source;../../build/command_input/share/command_input/hook/pythonpath_develop.dsv
+source;../../build/command_input/share/command_input/hook/pythonpath_develop.sh

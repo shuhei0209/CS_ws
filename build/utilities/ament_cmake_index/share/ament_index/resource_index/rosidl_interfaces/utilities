@@ -1,0 +1,4 @@
+srv/StringCommand.idl
+srv/StringCommand.srv
+srv/StringCommand_Request.msg
+srv/StringCommand_Response.msg
