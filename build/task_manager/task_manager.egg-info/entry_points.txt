@@ -1,0 +1,3 @@
+[console_scripts]
+idel_node = task_manager.idel_node:main
+

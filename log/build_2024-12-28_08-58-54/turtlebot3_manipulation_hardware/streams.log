@@ -1,0 +1,36 @@
+[0.089s] Invoking command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_hardware': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/CS_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_hardware
+[0.571s] -- The C compiler identification is GNU 11.4.0
+[0.837s] -- The CXX compiler identification is GNU 11.4.0
+[0.869s] -- Detecting C compiler ABI info
+[1.082s] -- Detecting C compiler ABI info - done
+[1.112s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.113s] -- Detecting C compile features
+[1.115s] -- Detecting C compile features - done
+[1.123s] -- Detecting CXX compiler ABI info
+[1.331s] -- Detecting CXX compiler ABI info - done
+[1.362s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[1.362s] -- Detecting CXX compile features
+[1.364s] -- Detecting CXX compile features - done
+[1.405s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[1.814s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[2.021s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[2.227s] [31mCMake Error at CMakeLists.txt:20 (find_package):
+[2.227s]   By not providing "Finddynamixel_sdk.cmake" in CMAKE_MODULE_PATH this
+[2.227s]   project has asked CMake to find a package configuration file provided by
+[2.228s]   "dynamixel_sdk", but CMake did not find one.
+[2.228s] 
+[2.228s]   Could not find a package configuration file provided by "dynamixel_sdk"
+[2.229s]   with any of the following names:
+[2.230s] 
+[2.230s]     dynamixel_sdkConfig.cmake
+[2.230s]     dynamixel_sdk-config.cmake
+[2.231s] 
+[2.231s]   Add the installation prefix of "dynamixel_sdk" to CMAKE_PREFIX_PATH or set
+[2.231s]   "dynamixel_sdk_DIR" to a directory containing one of the above files.  If
+[2.232s]   "dynamixel_sdk" provides a separate development package or SDK, be sure it
+[2.232s]   has been installed.
+[2.232s] 
+[2.233s] [0m
+[2.233s] -- Configuring incomplete, errors occurred!
+[2.233s] See also "/home/ubuntu/CS_ws/build/turtlebot3_manipulation_hardware/CMakeFiles/CMakeOutput.log".
+[2.239s] Invoked command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_hardware' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/CS_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_hardware -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_hardware

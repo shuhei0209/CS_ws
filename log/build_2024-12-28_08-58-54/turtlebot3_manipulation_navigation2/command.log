@@ -1,0 +1,1 @@
+Invoking command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_navigation2': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/ubuntu/CS_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_navigation2 -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2

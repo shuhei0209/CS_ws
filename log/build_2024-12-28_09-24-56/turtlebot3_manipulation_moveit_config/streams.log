@@ -1,0 +1,62 @@
+[0.058s] Invoking command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_moveit_config': AMENT_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:/opt/ros/humble /usr/bin/cmake /home/ubuntu/CS_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config
+[0.736s] -- The C compiler identification is GNU 11.4.0
+[1.554s] -- The CXX compiler identification is GNU 11.4.0
+[1.596s] -- Detecting C compiler ABI info
+[1.894s] -- Detecting C compiler ABI info - done
+[1.931s] -- Check for working C compiler: /usr/bin/cc - skipped
+[1.932s] -- Detecting C compile features
+[1.935s] -- Detecting C compile features - done
+[1.951s] -- Detecting CXX compiler ABI info
+[2.276s] -- Detecting CXX compiler ABI info - done
+[2.311s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[2.312s] -- Detecting CXX compile features
+[2.314s] -- Detecting CXX compile features - done
+[2.331s] -- Found ament_cmake: 1.3.11 (/opt/ros/humble/share/ament_cmake/cmake)
+[2.928s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[3.228s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[3.635s] -- Configuring done
+[3.672s] -- Generating done
+[3.683s] -- Build files have been written to: /home/ubuntu/CS_ws/build/turtlebot3_manipulation_moveit_config
+[3.704s] Invoked command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:/opt/ros/humble /usr/bin/cmake /home/ubuntu/CS_ws/src/turtlebot3_manipulation/turtlebot3_manipulation_moveit_config -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config
+[3.710s] Invoking command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_moveit_config': AMENT_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/CS_ws/build/turtlebot3_manipulation_moveit_config -- -j8 -l8
+[3.832s] Invoked command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/CS_ws/build/turtlebot3_manipulation_moveit_config -- -j8 -l8
+[3.844s] Invoking command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_moveit_config': AMENT_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/CS_ws/build/turtlebot3_manipulation_moveit_config
+[3.864s] -- Install configuration: ""
+[3.866s] -- Execute custom install script
+[3.872s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/ament_index/resource_index/package_run_dependencies/turtlebot3_manipulation_moveit_config
+[3.898s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/ament_index/resource_index/parent_prefix_path/turtlebot3_manipulation_moveit_config
+[3.929s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/environment/ament_prefix_path.sh
+[3.957s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/environment/ament_prefix_path.dsv
+[3.983s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/environment/path.sh
+[4.007s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/environment/path.dsv
+[4.031s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/local_setup.bash
+[4.059s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/local_setup.sh
+[4.084s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/local_setup.zsh
+[4.107s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/local_setup.dsv
+[4.131s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.dsv
+[4.161s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/ament_index/resource_index/packages/turtlebot3_manipulation_moveit_config
+[4.185s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/cmake/turtlebot3_manipulation_moveit_configConfig.cmake
+[4.209s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/cmake/turtlebot3_manipulation_moveit_configConfig-version.cmake
+[4.234s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/package.xml
+[4.267s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch/move_group.launch.py
+[4.290s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch/moveit_core.launch.py
+[4.314s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch/moveit_fake.launch.py
+[4.332s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch/moveit_gazebo.launch.py
+[4.350s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch/moveit_rviz.launch.py
+[4.374s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch/rsp.launch.py
+[4.398s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch/servo.launch.py
+[4.424s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch/setup_assistant.launch.py
+[4.447s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch/spawn_controllers.launch.py
+[4.470s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch/static_virtual_joint_tfs.launch.py
+[4.494s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/launch/warehouse_db.launch.py
+[4.525s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/config/initial_positions.yaml
+[4.555s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/config/joint_limits.yaml
+[4.579s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/config/kinematics.yaml
+[4.603s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/config/moveit.rviz
+[4.624s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/config/moveit_controllers.yaml
+[4.657s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/config/moveit_servo.yaml
+[4.677s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/config/moveit_teleop.rviz
+[4.701s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/config/ompl_planning.yaml
+[4.730s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/config/turtlebot3_manipulation.srdf
+[4.761s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config/share/turtlebot3_manipulation_moveit_config/.setup_assistant
+[4.800s] Invoked command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_moveit_config' returned '0': AMENT_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/CS_ws/build/turtlebot3_manipulation_moveit_config
