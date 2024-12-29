@@ -5,45 +5,27 @@ from rclpy.node import Node
 from geometry_msgs.msg import PoseStamped
 from utilities.srv import StringCommand
 
-# アイテムの座標を辞書で定義
-ITEMS = {
-    "boxA": (1.0, 2.0),
-    "boxB": (3.5, -1.2),
-    "boxC": (-2.0, 1.5)
-}
-
 # State: Idle
 class IdleState(smach.State):
     def __init__(self, node):
-        smach.State.__init__(self, outcomes=['proceed'], output_keys=['target_location'])
+        smach.State.__init__(self, outcomes=['proceed'], input_keys=['target_location'], output_keys=['target_location'])
         self.node = node
         self.logger = self.node.get_logger()
-        self.subscriber = self.node.create_subscription(String, 'user_command', self.command_callback, 10)
-        self.command = None
+        self.subscriber = self.node.create_subscription(PoseStamped, 'target_location', self.target_location_callback, 10)
+        self.target_location = None
 
-    def command_callback(self, msg):
-        self.command = msg.data
+    def target_location_callback(self, msg):
+        self.target_location = msg
 
     def execute(self, userdata):
-        self.logger.info("Idle: Waiting for command...")
-        while not self.command:
+        self.logger.info("Idle: Waiting for target location...")
+        while not self.target_location:
             rclpy.spin_once(self.node, timeout_sec=1.0)
-        item_name = self.command
-        self.command = None
+        userdata.target_location = self.target_location
+        self.target_location = None
+        self.logger.info(f"Received target location: ({userdata.target_location.pose.position.x}, {userdata.target_location.pose.position.y})")
+        return 'proceed'
 
-        if item_name in ITEMS:
-            x, y = ITEMS[item_name]
-            pose = PoseStamped()
-            pose.header.frame_id = "map"
-            pose.pose.position.x = x
-            pose.pose.position.y = y
-            pose.pose.orientation.w = 1.0
-            userdata.target_location = pose
-            self.logger.info(f"Command received: Moving to {item_name} at ({x}, {y})")
-            return 'proceed'
-        else:
-            self.logger.warn("Invalid item name. Please try again.")
-            return self.execute(userdata)
 
 # State: Navigate
 class NavigationState(smach.State):
