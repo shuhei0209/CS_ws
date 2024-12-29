@@ -1,0 +1,24 @@
+[0.233s] Invoking command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/CS_ws/build/turtlebot3_manipulation_cartographer -- -j8 -l8
+[2.633s] Invoked command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/CS_ws/build/turtlebot3_manipulation_cartographer -- -j8 -l8
+[2.640s] Invoking command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_cartographer': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/CS_ws/build/turtlebot3_manipulation_cartographer
+[2.731s] -- Install configuration: ""
+[2.731s] -- Execute custom install script
+[2.731s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/config/turtlebot3_2d.lua
+[2.732s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/launch/cartographer.launch.py
+[2.732s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/rviz/cartographer.rviz
+[2.732s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/ament_index/resource_index/package_run_dependencies/turtlebot3_manipulation_cartographer
+[2.735s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/ament_index/resource_index/parent_prefix_path/turtlebot3_manipulation_cartographer
+[2.738s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/environment/ament_prefix_path.sh
+[2.738s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/environment/ament_prefix_path.dsv
+[2.751s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/environment/path.sh
+[2.752s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/environment/path.dsv
+[2.753s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/local_setup.bash
+[2.753s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/local_setup.sh
+[2.754s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/local_setup.zsh
+[2.754s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/local_setup.dsv
+[2.754s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.dsv
+[2.791s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/ament_index/resource_index/packages/turtlebot3_manipulation_cartographer
+[2.791s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/cmake/turtlebot3_manipulation_cartographerConfig.cmake
+[2.792s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/cmake/turtlebot3_manipulation_cartographerConfig-version.cmake
+[2.793s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer/share/turtlebot3_manipulation_cartographer/package.xml
+[2.816s] Invoked command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_cartographer' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/CS_ws/build/turtlebot3_manipulation_cartographer

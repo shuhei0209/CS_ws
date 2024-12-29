@@ -1,0 +1,28 @@
+[0.246s] Invoking command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/CS_ws/build/turtlebot3_manipulation_navigation2 -- -j8 -l8
+[2.899s] Invoked command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/CS_ws/build/turtlebot3_manipulation_navigation2 -- -j8 -l8
+[2.910s] Invoking command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_navigation2': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/CS_ws/build/turtlebot3_manipulation_navigation2
+[2.958s] -- Install configuration: ""
+[2.976s] -- Execute custom install script
+[2.976s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/launch/navigation2.launch.py
+[2.976s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/launch/navigation2_use_sim_time.launch.py
+[2.977s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/map/turtlebot3_world.pgm
+[2.977s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/map/turtlebot3_world.yaml
+[2.977s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/param/turtlebot3.yaml
+[2.978s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/param/turtlebot3_use_sim_time.yaml
+[2.978s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/rviz/navigation2.rviz
+[2.978s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/ament_index/resource_index/package_run_dependencies/turtlebot3_manipulation_navigation2
+[2.979s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/ament_index/resource_index/parent_prefix_path/turtlebot3_manipulation_navigation2
+[2.979s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/environment/ament_prefix_path.sh
+[2.986s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/environment/ament_prefix_path.dsv
+[2.987s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/environment/path.sh
+[2.987s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/environment/path.dsv
+[2.987s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/local_setup.bash
+[2.991s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/local_setup.sh
+[2.994s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/local_setup.zsh
+[3.001s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/local_setup.dsv
+[3.006s] -- Symlinking: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.dsv
+[3.014s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/ament_index/resource_index/packages/turtlebot3_manipulation_navigation2
+[3.014s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/cmake/turtlebot3_manipulation_navigation2Config.cmake
+[3.014s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/cmake/turtlebot3_manipulation_navigation2Config-version.cmake
+[3.015s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2/share/turtlebot3_manipulation_navigation2/package.xml
+[3.267s] Invoked command in '/home/ubuntu/CS_ws/build/turtlebot3_manipulation_navigation2' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/CS_ws/build/turtlebot3_manipulation_navigation2

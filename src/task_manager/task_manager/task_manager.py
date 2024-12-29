@@ -52,13 +52,13 @@ class NavigationState(smach.State):
         self.node = node
         self.logger = self.node.get_logger()
 
-        # サービスクライアントの作成
+    def execute(self, userdata):
+        # サービスクライアントの初期化をここで実行
         self.cli = self.node.create_client(StringCommand, '/navigate_to_target')
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.logger.info('Waiting for the navigation service...')
-        self.req = StringCommand.Request()
 
-    def execute(self, userdata):
+        self.req = StringCommand.Request()
         self.logger.info('Starting navigation...')
 
         # `target_location` をリクエストに設定
@@ -84,11 +84,11 @@ class NavigationState(smach.State):
                 response = self.future.result()
                 break
 
-        # サービス応答の結果をチェック
         if response and response.answer == 'success':
             return True
         else:
             return False
+
 
 # State: DetectObject
 class DetectObjectState(smach.State):
@@ -135,7 +135,7 @@ class TaskState(Node):
             smach.StateMachine.add('PICK_OBJECT', PickObjectState(self), transitions={'picked': 'PLACE_OBJECT'})
             smach.StateMachine.add('PLACE_OBJECT', PlaceObjectState(self), transitions={'placed': 'task_complete'})
 
-        outcome = sm.execute()
+        outvome = sm.execute()
 
 # メイン関数
 def main():
