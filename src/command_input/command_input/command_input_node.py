@@ -6,7 +6,7 @@ from geometry_msgs.msg import PoseStamped
 ITEMS = {
     "boxA": (1.0, 2.0),
     "boxB": (3.5, -1.2),
-    "boxC": (-2.0, 1.5)
+    "boxC": (3.0, 1.0)
 }
 
 class CommandInputNode(Node):

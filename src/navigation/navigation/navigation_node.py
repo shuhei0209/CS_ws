@@ -1,5 +1,8 @@
 import rclpy
 from rclpy.node import Node
+from geometry_msgs.msg import PoseStamped
+from nav2_msgs.action import NavigateToPose
+from rclpy.action import ActionClient
 from utilities.srv import StringCommand
 
 class NavigationNode(Node):
@@ -7,6 +10,9 @@ class NavigationNode(Node):
         super().__init__('navigation_node')
         self.srv = self.create_service(StringCommand, '/navigate_to_target', self.handle_navigation_request)
         self.get_logger().info('Navigation Node Initialized and Service Ready.')
+
+        # ActionClient for NavigateToPose
+        self.navigation_client = ActionClient(self, NavigateToPose, 'navigate_to_pose')
 
     def handle_navigation_request(self, request, response):
         self.get_logger().info(f'Received navigation request: {request.command}')
@@ -16,8 +22,8 @@ class NavigationNode(Node):
             x, y = map(float, request.command.split(','))
             self.get_logger().info(f'Navigating to target: ({x}, {y})')
 
-            # 簡単なフェイクナビゲーション動作 (実際にはNav2や別のアルゴリズムを使用)
-            if self.simulate_navigation(x, y):
+            # NavigateToPoseアクションを使用したナビゲーション
+            if self.navigate_to_target(x, y):
                 response.answer = 'success'
                 self.get_logger().info('Successfully reached the target location.')
             else:
@@ -30,14 +36,41 @@ class NavigationNode(Node):
 
         return response
 
-    def simulate_navigation(self, x, y):
-        # 簡単なシミュレーションでナビゲーションの成功/失敗を決定
-        # 実際にはここにロボット制御コードを記述する
-        import time
-        time.sleep(5)  # ナビゲーション処理のシミュレーション
+    def navigate_to_target(self, x, y):
+        """Navigate to a target location using Nav2"""
+        if not self.navigation_client.wait_for_server(timeout_sec=5.0):
+            self.get_logger().error('NavigateToPose action server not available!')
+            return False
 
-        # 成功例をシンプルに返す (条件を設定する場合はここにロジックを追加)
-        return True
+        # Create PoseStamped message
+        goal_msg = NavigateToPose.Goal()
+        goal_msg.pose.header.frame_id = 'map'
+        goal_msg.pose.header.stamp = self.get_clock().now().to_msg()
+        goal_msg.pose.pose.position.x = x
+        goal_msg.pose.pose.position.y = y
+        goal_msg.pose.pose.orientation.w = 1.0  # 向きは適宜調整
+
+        self.get_logger().info(f'Sending goal: ({x}, {y})')
+        self.future = self.navigation_client.send_goal_async(goal_msg)
+
+        # Wait for the goal to complete
+        rclpy.spin_until_future_complete(self, self.future)
+        goal_handle = self.future.result()
+
+        if not goal_handle.accepted:
+            self.get_logger().error('Goal was rejected by the action server.')
+            return False
+
+        self.result_future = goal_handle.get_result_async()
+        rclpy.spin_until_future_complete(self, self.result_future)
+        result = self.result_future.result()
+
+        if result.status == 4:  # Nav2の成功ステータス
+            self.get_logger().info('Goal reached successfully.')
+            return True
+        else:
+            self.get_logger().error('Failed to reach the goal.')
+            return False
 
 def main(args=None):
     rclpy.init(args=args)
