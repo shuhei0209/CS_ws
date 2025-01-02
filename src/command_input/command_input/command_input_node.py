@@ -1,18 +1,18 @@
 import rclpy
 from rclpy.node import Node
-from geometry_msgs.msg import PoseStamped
+from std_msgs.msg import String
+from math import pi
 
-# アイテムの座標を辞書で定義
 ITEMS = {
-    "boxA": (1.0, 2.0),
-    "boxB": (3.5, -1.2),
-    "boxC": (3.0, 1.0)
+    "boxA": (4.1, 0.0, 0.0),
+    "boxB": (3.1, 2.2, -pi/2),
+    "boxC": (2.6, -0.5, pi)
 }
 
 class CommandInputNode(Node):
     def __init__(self):
         super().__init__('command_input_node')
-        self.publisher = self.create_publisher(PoseStamped, 'target_location', 10)
+        self.publisher = self.create_publisher(String, 'goal_pose', 10)
         self.get_logger().info('Command Input Node Initialized.')
 
         self.run()
@@ -21,14 +21,10 @@ class CommandInputNode(Node):
         while rclpy.ok():
             item_name = input("Enter item name (boxA, boxB, boxC): ").strip()
             if item_name in ITEMS:
-                x, y = ITEMS[item_name]
-                pose = PoseStamped()
-                pose.header.frame_id = "map"
-                pose.pose.position.x = x
-                pose.pose.position.y = y
-                pose.pose.orientation.w = 1.0
-                self.publisher.publish(pose)
-                self.get_logger().info(f'Published target location for {item_name}: ({x}, {y})')
+                x, y, yaw = ITEMS[item_name]
+                message = f"{x}, {y}, {yaw}"
+                self.publisher.publish(String(data=message))
+                self.get_logger().info(f'Published target location for {item_name}: {message}')
             else:
                 self.get_logger().warn('Invalid item name. Please try again.')
 

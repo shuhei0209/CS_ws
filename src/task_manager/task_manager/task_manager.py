@@ -8,53 +8,48 @@ from utilities.srv import StringCommand
 # State: Idle
 class IdleState(smach.State):
     def __init__(self, node):
-        smach.State.__init__(self, outcomes=['proceed'], input_keys=['target_location'], output_keys=['target_location'])
+        smach.State.__init__(self, outcomes=['proceed'], input_keys=['goal_pose'], output_keys=['goal_pose'])
         self.node = node
         self.logger = self.node.get_logger()
-        self.subscriber = self.node.create_subscription(PoseStamped, 'target_location', self.target_location_callback, 10)
-        self.target_location = None
+        self.subscriber = self.node.create_subscription(String, 'goal_pose', self.goal_pose_callback, 10)
+        self.goal_pose = None
 
-    def target_location_callback(self, msg):
-        self.target_location = msg
+    def goal_pose_callback(self, msg):
+        self.goal_pose = msg.data
 
     def execute(self, userdata):
-        self.logger.info("Idle: Waiting for target location...")
-        while not self.target_location:
+        self.logger.info("Idle: Waiting for goal pose...")
+        while not self.goal_pose:
             rclpy.spin_once(self.node, timeout_sec=1.0)
-        userdata.target_location = self.target_location
-        self.target_location = None
-        self.logger.info(f"Received target location: ({userdata.target_location.pose.position.x}, {userdata.target_location.pose.position.y})")
+        userdata.goal_pose = self.goal_pose
+        self.goal_pose = None
+        self.logger.info(f"Received goal_pose: {userdata.goal_pose}")
         return 'proceed'
 
 
 # State: Navigate
 class NavigationState(smach.State):
     def __init__(self, node):
-        smach.State.__init__(self, outcomes=['arrived', 'failed'], input_keys=['target_location'])
+        smach.State.__init__(self, outcomes=['succeeded', 'failed'], input_keys=['goal_pose'])
         self.node = node
         self.logger = self.node.get_logger()
 
     def execute(self, userdata):
-        # サービスクライアントの初期化をここで実行
-        self.cli = self.node.create_client(StringCommand, '/navigate_to_target')
+        self.cli = self.node.create_client(StringCommand, '/navigate_to_goal')
         while not self.cli.wait_for_service(timeout_sec=1.0):
             self.logger.info('Waiting for the navigation service...')
 
-        self.req = StringCommand.Request()
         self.logger.info('Starting navigation...')
+        self.req = StringCommand.Request()
+        self.req.command = userdata.goal_pose
 
-        # `target_location` をリクエストに設定
-        target = userdata.target_location
-        self.req.command = f"{target.pose.position.x},{target.pose.position.y}"
-
-        # サービスリクエストの送信
         result = self.send_request()
 
         if result:
-            self.logger.info('Successfully arrived at the target location.')
-            return 'arrived'
+            self.logger.info('Successfully arrived at the goal_pose.')
+            return 'succeeded'
         else:
-            self.logger.warn('Failed to navigate to the target location.')
+            self.logger.warn('Failed to navigate to the goal_pose.')
             return 'failed'
 
     def send_request(self):
@@ -75,34 +70,34 @@ class NavigationState(smach.State):
 # State: DetectObject
 class DetectObjectState(smach.State):
     def __init__(self, node):
-        smach.State.__init__(self, outcomes=['object_found'])
+        smach.State.__init__(self, outcomes=['succeeded'])
         self.node = node
 
     def execute(self, userdata):
         self.node.get_logger().info("DetectObject: Searching for the object...")
-        return 'object_found'
+        return 'succeeded'
 
 # State: PickObject
 class PickObjectState(smach.State):
     def __init__(self, node):
-        smach.State.__init__(self, outcomes=['picked'])
+        smach.State.__init__(self, outcomes=['succeeded'])
         self.node = node
 
     def execute(self, userdata):
         self.node.get_logger().info("PickObject: Picking up the object...")
-        return 'picked'
+        return 'succeeded'
 
 # State: PlaceObject
 class PlaceObjectState(smach.State):
     def __init__(self, node):
-        smach.State.__init__(self, outcomes=['placed'])
+        smach.State.__init__(self, outcomes=['succeeded'])
         self.node = node
 
     def execute(self, userdata):
         self.node.get_logger().info("PlaceObject: Placing the object...")
-        return 'placed'
+        return 'succeeded'
 
-# TaskStateノードの定義
+# TaskState node
 class TaskState(Node):
     def __init__(self):
         super().__init__('task_state_node')
@@ -112,14 +107,13 @@ class TaskState(Node):
 
         with sm:
             smach.StateMachine.add('IDLE', IdleState(self), transitions={'proceed': 'NAVIGATE'})
-            smach.StateMachine.add('NAVIGATE', NavigationState(self), transitions={'arrived': 'DETECT_OBJECT', 'failed': 'NAVIGATE'})
-            smach.StateMachine.add('DETECT_OBJECT', DetectObjectState(self), transitions={'object_found': 'PICK_OBJECT'})
-            smach.StateMachine.add('PICK_OBJECT', PickObjectState(self), transitions={'picked': 'PLACE_OBJECT'})
-            smach.StateMachine.add('PLACE_OBJECT', PlaceObjectState(self), transitions={'placed': 'task_complete'})
+            smach.StateMachine.add('NAVIGATE', NavigationState(self), transitions={'succeeded': 'DETECT_OBJECT', 'failed': 'NAVIGATE'})
+            smach.StateMachine.add('DETECT_OBJECT', DetectObjectState(self), transitions={'succeeded': 'PICK_OBJECT'})
+            smach.StateMachine.add('PICK_OBJECT', PickObjectState(self), transitions={'succeeded': 'PLACE_OBJECT'})
+            smach.StateMachine.add('PLACE_OBJECT', PlaceObjectState(self), transitions={'succeeded': 'task_complete'})
 
         outvome = sm.execute()
 
-# メイン関数
 def main():
     rclpy.init()
     node = TaskState()

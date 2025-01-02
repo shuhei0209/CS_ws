@@ -1,0 +1,122 @@
+[7.105s] Invoking command in '/home/ubuntu/CS_ws/build/utilities': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/CS_ws/build/utilities -- -j8 -l8
+[7.907s] [  3%] Built target utilities__cpp
+[8.267s] [  3%] Built target ament_cmake_python_symlink_utilities
+[8.541s] [ 12%] Built target utilities__rosidl_typesupport_introspection_cpp
+[11.406s] running egg_info
+[11.410s] writing utilities.egg-info/PKG-INFO
+[11.411s] writing dependency_links to utilities.egg-info/dependency_links.txt
+[11.412s] writing top-level names to utilities.egg-info/top_level.txt
+[11.446s] reading manifest file 'utilities.egg-info/SOURCES.txt'
+[11.446s] writing manifest file 'utilities.egg-info/SOURCES.txt'
+[11.618s] [ 12%] Built target ament_cmake_python_build_utilities_egg
+[11.789s] [ 22%] Built target utilities__rosidl_typesupport_fastrtps_cpp
+[11.929s] [ 32%] Built target utilities__rosidl_typesupport_cpp
+[12.107s] [ 41%] Built target utilities__rosidl_generator_c
+[12.260s] [ 51%] Built target utilities__rosidl_typesupport_fastrtps_c
+[12.401s] [ 61%] Built target utilities__rosidl_typesupport_c
+[12.609s] [ 70%] Built target utilities__rosidl_typesupport_introspection_c
+[12.780s] [ 70%] Built target utilities
+[13.020s] [ 74%] Built target utilities__py
+[13.195s] [ 80%] Built target utilities__rosidl_generator_py
+[13.459s] [ 87%] Built target utilities__rosidl_typesupport_fastrtps_c__pyext
+[13.626s] [ 93%] Built target utilities__rosidl_typesupport_c__pyext
+[13.846s] [100%] Built target utilities__rosidl_typesupport_introspection_c__pyext
+[13.911s] Invoked command in '/home/ubuntu/CS_ws/build/utilities' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --build /home/ubuntu/CS_ws/build/utilities -- -j8 -l8
+[13.923s] Invoking command in '/home/ubuntu/CS_ws/build/utilities': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/CS_ws/build/utilities
+[13.986s] -- Install configuration: ""
+[13.994s] -- Execute custom install script
+[13.995s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/ament_index/resource_index/rosidl_interfaces/utilities
+[14.001s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/msg/rosidl_generator_c__visibility_control.h
+[14.004s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/detail/string_command__functions.h
+[14.015s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/detail/string_command__struct.h
+[14.033s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/detail/string_command__type_support.h
+[14.044s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/string_command.h
+[14.046s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/environment/library_path.sh
+[14.047s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/environment/library_path.dsv
+[14.047s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/msg/rosidl_typesupport_fastrtps_c__visibility_control.h
+[14.048s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/detail/string_command__rosidl_typesupport_fastrtps_c.h
+[14.048s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/msg/rosidl_typesupport_introspection_c__visibility_control.h
+[14.048s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/detail/string_command__rosidl_typesupport_introspection_c.h
+[14.049s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/msg/rosidl_generator_cpp__visibility_control.hpp
+[14.049s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/detail/string_command__builder.hpp
+[14.049s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/detail/string_command__struct.hpp
+[14.050s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/detail/string_command__traits.hpp
+[14.050s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/detail/string_command__type_support.hpp
+[14.056s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/string_command.hpp
+[14.056s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h
+[14.057s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/detail/string_command__rosidl_typesupport_fastrtps_cpp.hpp
+[14.057s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/include/utilities/utilities/srv/detail/string_command__rosidl_typesupport_introspection_cpp.hpp
+[14.058s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/environment/pythonpath.sh
+[14.059s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/environment/pythonpath.dsv
+[14.059s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities-0.0.0-py3.10.egg-info/PKG-INFO
+[14.059s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities-0.0.0-py3.10.egg-info/SOURCES.txt
+[14.059s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities-0.0.0-py3.10.egg-info/dependency_links.txt
+[14.060s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities-0.0.0-py3.10.egg-info/top_level.txt
+[14.060s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/__init__.py
+[14.060s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/_utilities_s.ep.rosidl_typesupport_c.c
+[14.061s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/_utilities_s.ep.rosidl_typesupport_fastrtps_c.c
+[14.061s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/_utilities_s.ep.rosidl_typesupport_introspection_c.c
+[14.061s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/libutilities__rosidl_generator_py.so
+[14.061s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/srv/__init__.py
+[14.062s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/srv/_string_command.py
+[14.062s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/srv/_string_command_s.c
+[14.062s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/utilities_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[14.063s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/utilities_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[14.063s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/utilities_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[14.065s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/utilities_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so
+[14.066s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/utilities_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so
+[14.066s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/utilities_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so
+[14.067s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/srv/StringCommand.idl
+[14.067s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/srv/StringCommand.srv
+[14.073s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/srv/StringCommand_Request.msg
+[14.073s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/srv/StringCommand_Response.msg
+[14.074s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/ament_index/resource_index/package_run_dependencies/utilities
+[14.074s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/ament_index/resource_index/parent_prefix_path/utilities
+[14.075s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/environment/ament_prefix_path.sh
+[14.076s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/environment/ament_prefix_path.dsv
+[14.077s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/environment/path.sh
+[14.083s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/environment/path.dsv
+[14.083s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/local_setup.bash
+[14.084s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/local_setup.sh
+[14.084s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/local_setup.zsh
+[14.084s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/local_setup.dsv
+[14.085s] -- Symlinking: /home/ubuntu/CS_ws/install/utilities/share/utilities/package.dsv
+[14.129s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/ament_index/resource_index/packages/utilities
+[14.129s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/rosidl_cmake-extras.cmake
+[14.136s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/ament_cmake_export_include_directories-extras.cmake
+[14.136s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/ament_cmake_export_libraries-extras.cmake
+[14.151s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/ament_cmake_export_targets-extras.cmake
+[14.151s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake
+[14.153s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/ament_cmake_export_dependencies-extras.cmake
+[14.153s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake
+[14.156s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/utilitiesConfig.cmake
+[14.158s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/utilitiesConfig-version.cmake
+[14.159s] -- Up-to-date symlink: /home/ubuntu/CS_ws/install/utilities/share/utilities/package.xml
+[14.162s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/lib/libutilities__rosidl_generator_c.so
+[14.165s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/lib/libutilities__rosidl_typesupport_fastrtps_c.so
+[14.166s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/lib/libutilities__rosidl_typesupport_introspection_c.so
+[14.170s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/lib/libutilities__rosidl_typesupport_c.so
+[14.171s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/lib/libutilities__rosidl_typesupport_fastrtps_cpp.so
+[14.210s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/lib/libutilities__rosidl_typesupport_introspection_cpp.so
+[14.211s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/lib/libutilities__rosidl_typesupport_cpp.so
+[14.454s] Listing '/home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities'...
+[14.455s] Listing '/home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages/utilities/srv'...
+[14.478s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/lib/libutilities__rosidl_generator_py.so
+[14.488s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/export_utilities__rosidl_generator_cExport.cmake
+[14.489s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/export_utilities__rosidl_generator_cExport-noconfig.cmake
+[14.491s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/export_utilities__rosidl_typesupport_fastrtps_cExport.cmake
+[14.491s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/export_utilities__rosidl_typesupport_fastrtps_cExport-noconfig.cmake
+[14.493s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/utilities__rosidl_typesupport_introspection_cExport.cmake
+[14.493s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/utilities__rosidl_typesupport_introspection_cExport-noconfig.cmake
+[14.494s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/utilities__rosidl_typesupport_cExport.cmake
+[14.495s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/utilities__rosidl_typesupport_cExport-noconfig.cmake
+[14.499s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/export_utilities__rosidl_generator_cppExport.cmake
+[14.501s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/export_utilities__rosidl_typesupport_fastrtps_cppExport.cmake
+[14.502s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/export_utilities__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake
+[14.503s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/utilities__rosidl_typesupport_introspection_cppExport.cmake
+[14.505s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/utilities__rosidl_typesupport_introspection_cppExport-noconfig.cmake
+[14.507s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/utilities__rosidl_typesupport_cppExport.cmake
+[14.510s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/utilities__rosidl_typesupport_cppExport-noconfig.cmake
+[14.511s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/export_utilities__rosidl_generator_pyExport.cmake
+[14.511s] -- Up-to-date: /home/ubuntu/CS_ws/install/utilities/share/utilities/cmake/export_utilities__rosidl_generator_pyExport-noconfig.cmake
+[14.540s] Invoked command in '/home/ubuntu/CS_ws/build/utilities' returned '0': CMAKE_PREFIX_PATH=${CMAKE_PREFIX_PATH}:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble /usr/bin/cmake --install /home/ubuntu/CS_ws/build/utilities

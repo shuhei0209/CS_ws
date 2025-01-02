@@ -1,0 +1,17 @@
+[9.484s] Invoking command in '/home/ubuntu/CS_ws/build/task_manager': PYTHONPATH=/home/ubuntu/CS_ws/build/task_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/CS_ws/install/task_manager/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/CS_ws/build/task_manager/build --no-deps symlink_data
+[11.430s] running develop
+[12.863s] running egg_info
+[12.863s] writing task_manager.egg-info/PKG-INFO
+[12.864s] writing dependency_links to task_manager.egg-info/dependency_links.txt
+[12.865s] writing entry points to task_manager.egg-info/entry_points.txt
+[12.866s] writing requirements to task_manager.egg-info/requires.txt
+[12.867s] writing top-level names to task_manager.egg-info/top_level.txt
+[12.886s] reading manifest file 'task_manager.egg-info/SOURCES.txt'
+[12.887s] writing manifest file 'task_manager.egg-info/SOURCES.txt'
+[12.914s] running build_ext
+[12.915s] Creating /home/ubuntu/CS_ws/install/task_manager/lib/python3.10/site-packages/task-manager.egg-link (link to .)
+[12.916s] Installing task_manager script to /home/ubuntu/CS_ws/install/task_manager/lib/task_manager
+[12.917s] 
+[12.918s] Installed /home/ubuntu/CS_ws/build/task_manager
+[12.918s] running symlink_data
+[13.112s] Invoked command in '/home/ubuntu/CS_ws/build/task_manager' returned '0': PYTHONPATH=/home/ubuntu/CS_ws/build/task_manager/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/CS_ws/install/task_manager/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/CS_ws/build/task_manager/build --no-deps symlink_data
