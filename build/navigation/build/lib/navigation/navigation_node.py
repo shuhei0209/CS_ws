@@ -11,21 +11,35 @@ from utilities.srv import StringCommand
 class NavigationNode(Node):
     def __init__(self):
         super().__init__('navigation_node')
+
         self.callback_group = ReentrantCallbackGroup()
-        self.srv = self.create_service(StringCommand, '/navigate_to_goal', self.handle_navigation_request, callback_group=self.callback_group)
+
+        # Service server
+        self.srv = self.create_service(
+            StringCommand,
+            '/navigate_to_goal',
+            self.handle_navigation_request,
+            callback_group=self.callback_group
+        )
+
         self.get_logger().info('Navigation Node Initialized and Service Ready.')
 
         # ActionClient for NavigateToPose
-        self.navigation_client = ActionClient(self, NavigateToPose, 'navigate_to_pose', callback_group=self.callback_group)
+        self.navigation_client = ActionClient(
+            self,
+            NavigateToPose,
+            'navigate_to_pose',
+            callback_group=self.callback_group
+        )
 
     def handle_navigation_request(self, request, response):
-        self.get_logger().info(f'Received navigation request: {request.command}')
+        self.get_logger().info(f"Received navigation request: {request.command}")
 
         try:
             x, y, yaw = map(float, request.command.split(','))
-            self.get_logger().info(f'Navigating to goal: ({x}, {y}, {yaw})')
+            self.get_logger().info(f"Navigating to goal: ({x}, {y}, {yaw})")
 
-            # Navigation using NavigateToPose Acition
+            # Navigation using NavigateToPose Action
             if self.navigate_to_goal(x, y, yaw):
                 response.answer = 'success'
                 self.get_logger().info('Successfully reached the goal pose.')
@@ -40,7 +54,7 @@ class NavigationNode(Node):
         return response
 
     def navigate_to_goal(self, x, y, yaw):
-        # Navigate to a goal pose using Nav2
+        # Wait for action server to be available
         while not self.navigation_client.wait_for_server(timeout_sec=1.0):
             self.get_logger().info('Waiting for the start-up of action server')
 
@@ -56,15 +70,14 @@ class NavigationNode(Node):
         self.future = self.navigation_client.send_goal_async(goal_msg)
         self.get_logger().info('Goal message sent')
 
-        self.get_logger().info(f'Future done? {self.future.done()}')
         rclpy.spin_until_future_complete(self, self.future)
-        self.get_logger().info('Future completed')
+        self.get_logger().info(f'Future done? {self.future.done()}')
 
         goal_handle = self.future.result()
         if goal_handle is None:
             self.get_logger().error('Goal handle is None.')
             return False
-            
+
         if not goal_handle.accepted:
             self.get_logger().error('Goal was rejected by the action server.')
             return False
@@ -74,6 +87,8 @@ class NavigationNode(Node):
         self.get_logger().info('Waiting for result...')
         rclpy.spin_until_future_complete(self, self.result_future)
         result = self.result_future.result()
+        self.future = None
+        self.result_future = None
 
         self.get_logger().info(f"Nav2 result status: {result.status}")
 
@@ -83,6 +98,7 @@ class NavigationNode(Node):
         else:
             self.get_logger().error('Failed to reach the goal.')
             return False
+
 
 def main(args=None):
     rclpy.init(args=args)
@@ -98,6 +114,7 @@ def main(args=None):
         node.get_logger().info('Shutting down Navigation Node finally.')
         node.destroy_node()
         rclpy.shutdown()
+
 
 if __name__ == '__main__':
     main()

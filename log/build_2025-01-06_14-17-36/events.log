@@ -1,0 +1,97 @@
+[0.000000] (-) TimerEvent: {}
+[0.005116] (-) JobUnselected: {'identifier': 'command_input'}
+[0.005669] (-) JobUnselected: {'identifier': 'task_manager'}
+[0.006855] (-) JobUnselected: {'identifier': 'testserver'}
+[0.007281] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation'}
+[0.007780] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_bringup'}
+[0.008336] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_cartographer'}
+[0.008843] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_description'}
+[0.009323] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_hardware'}
+[0.009807] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_moveit_config'}
+[0.010349] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_navigation2'}
+[0.013306] (-) JobUnselected: {'identifier': 'turtlebot3_manipulation_teleop'}
+[0.013860] (-) JobUnselected: {'identifier': 'utilities'}
+[0.014427] (navigation) JobQueued: {'identifier': 'navigation', 'dependencies': OrderedDict()}
+[0.014912] (navigation) JobStarted: {'identifier': 'navigation'}
+[0.099515] (-) TimerEvent: {}
+[0.202141] (-) TimerEvent: {}
+[0.304017] (-) TimerEvent: {}
+[0.405202] (-) TimerEvent: {}
+[0.507086] (-) TimerEvent: {}
+[0.608063] (-) TimerEvent: {}
+[0.709515] (-) TimerEvent: {}
+[0.818506] (-) TimerEvent: {}
+[0.919770] (-) TimerEvent: {}
+[1.021006] (-) TimerEvent: {}
+[1.122184] (-) TimerEvent: {}
+[1.223162] (-) TimerEvent: {}
+[1.324180] (-) TimerEvent: {}
+[1.427804] (-) TimerEvent: {}
+[1.538469] (-) TimerEvent: {}
+[1.639684] (-) TimerEvent: {}
+[1.740991] (-) TimerEvent: {}
+[1.844655] (-) TimerEvent: {}
+[1.945820] (-) TimerEvent: {}
+[2.049288] (-) TimerEvent: {}
+[2.150521] (-) TimerEvent: {}
+[2.252203] (-) TimerEvent: {}
+[2.353784] (-) TimerEvent: {}
+[2.454301] (-) TimerEvent: {}
+[2.554842] (-) TimerEvent: {}
+[2.655429] (-) TimerEvent: {}
+[2.756516] (-) TimerEvent: {}
+[2.857706] (-) TimerEvent: {}
+[2.960455] (-) TimerEvent: {}
+[3.061289] (-) TimerEvent: {}
+[3.161885] (-) TimerEvent: {}
+[3.268228] (-) TimerEvent: {}
+[3.369587] (-) TimerEvent: {}
+[3.471067] (-) TimerEvent: {}
+[3.571789] (-) TimerEvent: {}
+[3.672467] (-) TimerEvent: {}
+[3.763689] (navigation) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', '-W', 'ignore:easy_install command is deprecated', 'setup.py', 'egg_info', '--egg-base', '../../build/navigation', 'build', '--build-base', '/home/ubuntu/CS_ws/build/navigation/build', 'install', '--record', '/home/ubuntu/CS_ws/build/navigation/install.log', '--single-version-externally-managed', 'install_data'], 'cwd': '/home/ubuntu/CS_ws/src/navigation', 'env': {'VNCDESKTOP': '93608848e45b:1 (ubuntu)', 'LESSOPEN': '| /usr/bin/lesspipe %s', 'QT_SCALE_FACTOR': '1', 'USER': 'ubuntu', 'SUPERVISOR_GROUP_NAME': 'vnc', 'HOSTNAME': '93608848e45b', 'XDG_SESSION_TYPE': 'x11', 'SHLVL': '2', 'LD_LIBRARY_PATH': '/home/ubuntu/CS_ws/install/utilities/lib:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_hardware/lib:/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'HOME': '/home/ubuntu', 'GIO_LAUNCHED_DESKTOP_FILE': '/home/ubuntu/Desktop/terminator.desktop', 'ROS_PYTHON_VERSION': '3', 'LC_CTYPE': 'C.UTF-8', 'DBUS_SESSION_BUS_ADDRESS': 'unix:abstract=/tmp/dbus-r7HLD9BHhl,guid=0009724587d1f6438d8c54bc677bdb71', 'COLORTERM': 'truecolor', 'TERMINATOR_DBUS_NAME': 'net.tenshu.Terminator23558193cd9818af7fe4d2c2f5bd9d00f', 'GIO_LAUNCHED_DESKTOP_FILE_PID': '579', 'GNOME_KEYRING_CONTROL': '/home/ubuntu/.cache/keyring-NVXIZ2', 'COLCON_PREFIX_PATH': '/home/ubuntu/CS_ws/install', 'ROS_DISTRO': 'humble', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'GTK_OVERLAY_SCROLLING': '0', 'GAZEBO_MODEL_PATH': '/home/ubuntu/CS_ws/install/turtlebot3_manipulation_bringup/share/turtlebot3_manipulation_bringup/worlds:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description/share', 'ROS_LOCALHOST_ONLY': '0', 'INSIDE_CAJA_PYTHON': '', 'PATH': '/opt/ros/humble/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin', 'SESSION_MANAGER': 'local/93608848e45b:@/tmp/.ICE-unix/67,unix/93608848e45b:/tmp/.ICE-unix/67', 'DISPLAY': ':1', 'TERMINATOR_DBUS_PATH': '/net/tenshu/Terminator2', 'XDG_CURRENT_DESKTOP': 'MATE', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'SUPERVISOR_ENABLED': '1', 'SSH_AUTH_SOCK': '/home/ubuntu/.cache/keyring-NVXIZ2/ssh', 'AMENT_PREFIX_PATH': '/home/ubuntu/CS_ws/install/utilities:/home/ubuntu/CS_ws/install/turtlebot3_manipulation:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_teleop:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_hardware:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_bringup:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer:/home/ubuntu/CS_ws/install/testserver:/home/ubuntu/CS_ws/install/task_manager:/home/ubuntu/CS_ws/install/navigation:/home/ubuntu/CS_ws/install/command_input:/opt/ros/humble', 'TERMINATOR_UUID': 'urn:uuid:7ef9e494-e212-4bf5-bcdf-984d95ba8075', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'PASSWD': 'ubuntu', 'SUPERVISOR_SERVER_URL': 'unix:///var/run/supervisor.sock', 'SUPERVISOR_PROCESS_NAME': 'vnc', 'PWD': '/home/ubuntu/CS_ws/build/navigation', 'PYTHONPATH': '/home/ubuntu/CS_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages:/home/ubuntu/CS_ws/install/utilities/local/lib/python3.10/dist-packages:/home/ubuntu/CS_ws/install/testserver/lib/python3.10/site-packages:/home/ubuntu/CS_ws/build/task_manager:/home/ubuntu/CS_ws/install/task_manager/lib/python3.10/site-packages:/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages:/home/ubuntu/CS_ws/build/command_input:/home/ubuntu/CS_ws/install/command_input/lib/python3.10/site-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'MATE_DESKTOP_SESSION_ID': 'this-is-deprecated', 'COLCON': '1', 'VTE_VERSION': '6800', 'CMAKE_PREFIX_PATH': '/home/ubuntu/CS_ws/install/utilities:/home/ubuntu/CS_ws/install/turtlebot3_manipulation:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_teleop:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_navigation2:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_moveit_config:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_hardware:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_bringup:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_description:/home/ubuntu/CS_ws/install/turtlebot3_manipulation_cartographer', 'QT_FONT_DPI': '96'}, 'shell': False}
+[3.782416] (-) TimerEvent: {}
+[3.883428] (-) TimerEvent: {}
+[3.984054] (-) TimerEvent: {}
+[4.084930] (-) TimerEvent: {}
+[4.186284] (-) TimerEvent: {}
+[4.287100] (-) TimerEvent: {}
+[4.396882] (-) TimerEvent: {}
+[4.497691] (-) TimerEvent: {}
+[4.598195] (-) TimerEvent: {}
+[4.698822] (-) TimerEvent: {}
+[4.800233] (-) TimerEvent: {}
+[4.901278] (-) TimerEvent: {}
+[5.004099] (-) TimerEvent: {}
+[5.104680] (-) TimerEvent: {}
+[5.198018] (navigation) StdoutLine: {'line': b'running egg_info\n'}
+[5.200449] (navigation) StdoutLine: {'line': b'writing ../../build/navigation/navigation.egg-info/PKG-INFO\n'}
+[5.201515] (navigation) StdoutLine: {'line': b'writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt\n'}
+[5.204888] (-) TimerEvent: {}
+[5.205437] (navigation) StdoutLine: {'line': b'writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt\n'}
+[5.205852] (navigation) StdoutLine: {'line': b'writing requirements to ../../build/navigation/navigation.egg-info/requires.txt\n'}
+[5.206213] (navigation) StdoutLine: {'line': b'writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt\n'}
+[5.216895] (navigation) StdoutLine: {'line': b"reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'\n"}
+[5.222820] (navigation) StdoutLine: {'line': b"writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'\n"}
+[5.229340] (navigation) StdoutLine: {'line': b'running build\n'}
+[5.230059] (navigation) StdoutLine: {'line': b'running build_py\n'}
+[5.236954] (navigation) StdoutLine: {'line': b'copying navigation/navigation_node.py -> /home/ubuntu/CS_ws/build/navigation/build/lib/navigation\n'}
+[5.238382] (navigation) StdoutLine: {'line': b'running install\n'}
+[5.242048] (navigation) StdoutLine: {'line': b'running install_lib\n'}
+[5.247201] (navigation) StdoutLine: {'line': b'copying /home/ubuntu/CS_ws/build/navigation/build/lib/navigation/navigation_node.py -> /home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation\n'}
+[5.249759] (navigation) StdoutLine: {'line': b'byte-compiling /home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation/navigation_node.py to navigation_node.cpython-310.pyc\n'}
+[5.255928] (navigation) StdoutLine: {'line': b'running install_data\n'}
+[5.256584] (navigation) StdoutLine: {'line': b'running install_egg_info\n'}
+[5.267515] (navigation) StdoutLine: {'line': b"removing '/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info' (and everything under it)\n"}
+[5.269657] (navigation) StdoutLine: {'line': b'Copying ../../build/navigation/navigation.egg-info to /home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info\n'}
+[5.279638] (navigation) StdoutLine: {'line': b'running install_scripts\n'}
+[5.305044] (-) TimerEvent: {}
+[5.406190] (-) TimerEvent: {}
+[5.505294] (navigation) StdoutLine: {'line': b'Installing navigation_node script to /home/ubuntu/CS_ws/install/navigation/lib/navigation\n'}
+[5.506359] (-) TimerEvent: {}
+[5.509832] (navigation) StdoutLine: {'line': b"writing list of installed files to '/home/ubuntu/CS_ws/build/navigation/install.log'\n"}
+[5.606613] (-) TimerEvent: {}
+[5.638221] (navigation) CommandEnded: {'returncode': 0}
+[5.702289] (navigation) JobEnded: {'identifier': 'navigation', 'rc': 0}
+[5.706849] (-) TimerEvent: {}
+[5.709357] (-) EventReactorShutdown: {}

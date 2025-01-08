@@ -1,0 +1,29 @@
+[1.075s] Invoking command in '/home/ubuntu/CS_ws/src/navigation': PYTHONPATH=/home/ubuntu/CS_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/ubuntu/CS_ws/build/navigation/build install --record /home/ubuntu/CS_ws/build/navigation/install.log --single-version-externally-managed install_data
+[1.462s] running egg_info
+[1.463s] writing ../../build/navigation/navigation.egg-info/PKG-INFO
+[1.464s] writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+[1.464s] writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+[1.465s] writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+[1.465s] writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+[1.468s] reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[1.470s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[1.470s] running build
+[1.471s] running build_py
+[1.471s] copying navigation/navigation_node.py -> /home/ubuntu/CS_ws/build/navigation/build/lib/navigation
+[1.472s] running install
+[1.472s] running install_lib
+[1.474s] copying /home/ubuntu/CS_ws/build/navigation/build/lib/navigation/navigation_node.py -> /home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation
+[1.475s] byte-compiling /home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation/navigation_node.py to navigation_node.cpython-310.pyc
+[1.477s]   File "/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation/navigation_node.py", line 31
+[1.477s]     success = await asyncio.get_event_loop().run_in_executor(self.executor, self.navigate_to_goal, x, y, yaw)
+[1.477s]               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+[1.477s] SyntaxError: 'await' outside async function
+[1.478s] 
+[1.478s] running install_data
+[1.478s] running install_egg_info
+[1.483s] removing '/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info' (and everything under it)
+[1.485s] Copying ../../build/navigation/navigation.egg-info to /home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info
+[1.487s] running install_scripts
+[1.527s] Installing navigation_node script to /home/ubuntu/CS_ws/install/navigation/lib/navigation
+[1.528s] writing list of installed files to '/home/ubuntu/CS_ws/build/navigation/install.log'
+[1.578s] Invoked command in '/home/ubuntu/CS_ws/src/navigation' returned '0': PYTHONPATH=/home/ubuntu/CS_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/ubuntu/CS_ws/build/navigation/build install --record /home/ubuntu/CS_ws/build/navigation/install.log --single-version-externally-managed install_data

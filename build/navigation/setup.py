@@ -1,1 +1,0 @@
-/home/ubuntu/CS_ws/src/navigation/setup.py

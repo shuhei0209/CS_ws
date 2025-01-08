@@ -1,0 +1,5 @@
+  File "/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation/navigation_node.py", line 27
+    success = await asyncio.get_event_loop().run_in_executor(self.executor, self.navigate_to_goal, x, y, yaw)
+              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+SyntaxError: 'await' outside async function
+

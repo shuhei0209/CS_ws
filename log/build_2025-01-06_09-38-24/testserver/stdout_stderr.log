@@ -1,0 +1,35 @@
+running egg_info
+creating ../../build/testserver/testserver.egg-info
+writing ../../build/testserver/testserver.egg-info/PKG-INFO
+writing dependency_links to ../../build/testserver/testserver.egg-info/dependency_links.txt
+writing entry points to ../../build/testserver/testserver.egg-info/entry_points.txt
+writing requirements to ../../build/testserver/testserver.egg-info/requires.txt
+writing top-level names to ../../build/testserver/testserver.egg-info/top_level.txt
+writing manifest file '../../build/testserver/testserver.egg-info/SOURCES.txt'
+reading manifest file '../../build/testserver/testserver.egg-info/SOURCES.txt'
+writing manifest file '../../build/testserver/testserver.egg-info/SOURCES.txt'
+running build
+running build_py
+creating /home/ubuntu/CS_ws/build/testserver/build
+creating /home/ubuntu/CS_ws/build/testserver/build/lib
+creating /home/ubuntu/CS_ws/build/testserver/build/lib/testserver
+copying testserver/__init__.py -> /home/ubuntu/CS_ws/build/testserver/build/lib/testserver
+copying testserver/testserver_node.py -> /home/ubuntu/CS_ws/build/testserver/build/lib/testserver
+running install
+running install_lib
+creating /home/ubuntu/CS_ws/install/testserver/lib/python3.10/site-packages/testserver
+copying /home/ubuntu/CS_ws/build/testserver/build/lib/testserver/__init__.py -> /home/ubuntu/CS_ws/install/testserver/lib/python3.10/site-packages/testserver
+copying /home/ubuntu/CS_ws/build/testserver/build/lib/testserver/testserver_node.py -> /home/ubuntu/CS_ws/install/testserver/lib/python3.10/site-packages/testserver
+byte-compiling /home/ubuntu/CS_ws/install/testserver/lib/python3.10/site-packages/testserver/__init__.py to __init__.cpython-310.pyc
+byte-compiling /home/ubuntu/CS_ws/install/testserver/lib/python3.10/site-packages/testserver/testserver_node.py to testserver_node.cpython-310.pyc
+running install_data
+creating /home/ubuntu/CS_ws/install/testserver/share/ament_index
+creating /home/ubuntu/CS_ws/install/testserver/share/ament_index/resource_index
+creating /home/ubuntu/CS_ws/install/testserver/share/ament_index/resource_index/packages
+copying resource/testserver -> /home/ubuntu/CS_ws/install/testserver/share/ament_index/resource_index/packages
+copying package.xml -> /home/ubuntu/CS_ws/install/testserver/share/testserver
+running install_egg_info
+Copying ../../build/testserver/testserver.egg-info to /home/ubuntu/CS_ws/install/testserver/lib/python3.10/site-packages/testserver-0.0.0-py3.10.egg-info
+running install_scripts
+Installing testserver_node script to /home/ubuntu/CS_ws/install/testserver/lib/testserver
+writing list of installed files to '/home/ubuntu/CS_ws/build/testserver/install.log'

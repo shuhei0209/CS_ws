@@ -1,1 +1,0 @@
-/home/ubuntu/CS_ws/src/task_manager/setup.py

@@ -1,0 +1,17 @@
+[14.340s] Invoking command in '/home/ubuntu/CS_ws/build/command_input': PYTHONPATH=/home/ubuntu/CS_ws/build/command_input/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/CS_ws/install/command_input/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/CS_ws/build/command_input/build --no-deps symlink_data
+[17.754s] running develop
+[19.662s] running egg_info
+[19.663s] writing command_input.egg-info/PKG-INFO
+[19.663s] writing dependency_links to command_input.egg-info/dependency_links.txt
+[19.663s] writing entry points to command_input.egg-info/entry_points.txt
+[19.673s] writing requirements to command_input.egg-info/requires.txt
+[19.673s] writing top-level names to command_input.egg-info/top_level.txt
+[19.682s] reading manifest file 'command_input.egg-info/SOURCES.txt'
+[19.685s] writing manifest file 'command_input.egg-info/SOURCES.txt'
+[19.696s] running build_ext
+[19.697s] Creating /home/ubuntu/CS_ws/install/command_input/lib/python3.10/site-packages/command-input.egg-link (link to .)
+[19.706s] Installing command_input_node script to /home/ubuntu/CS_ws/install/command_input/lib/command_input
+[19.720s] 
+[19.721s] Installed /home/ubuntu/CS_ws/build/command_input
+[19.734s] running symlink_data
+[20.014s] Invoked command in '/home/ubuntu/CS_ws/build/command_input' returned '0': PYTHONPATH=/home/ubuntu/CS_ws/build/command_input/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/CS_ws/install/command_input/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py develop --editable --build-directory /home/ubuntu/CS_ws/build/command_input/build --no-deps symlink_data

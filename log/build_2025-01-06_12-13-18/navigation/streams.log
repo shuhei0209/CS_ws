@@ -1,0 +1,24 @@
+[4.353s] Invoking command in '/home/ubuntu/CS_ws/src/navigation': PYTHONPATH=/home/ubuntu/CS_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/ubuntu/CS_ws/build/navigation/build install --record /home/ubuntu/CS_ws/build/navigation/install.log --single-version-externally-managed install_data
+[6.188s] running egg_info
+[6.196s] writing ../../build/navigation/navigation.egg-info/PKG-INFO
+[6.201s] writing dependency_links to ../../build/navigation/navigation.egg-info/dependency_links.txt
+[6.235s] writing entry points to ../../build/navigation/navigation.egg-info/entry_points.txt
+[6.236s] writing requirements to ../../build/navigation/navigation.egg-info/requires.txt
+[6.240s] writing top-level names to ../../build/navigation/navigation.egg-info/top_level.txt
+[6.259s] reading manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[6.260s] writing manifest file '../../build/navigation/navigation.egg-info/SOURCES.txt'
+[6.260s] running build
+[6.263s] running build_py
+[6.265s] copying navigation/navigation_node.py -> /home/ubuntu/CS_ws/build/navigation/build/lib/navigation
+[6.269s] running install
+[6.271s] running install_lib
+[6.276s] copying /home/ubuntu/CS_ws/build/navigation/build/lib/navigation/navigation_node.py -> /home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation
+[6.280s] byte-compiling /home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation/navigation_node.py to navigation_node.cpython-310.pyc
+[6.286s] running install_data
+[6.287s] running install_egg_info
+[6.298s] removing '/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info' (and everything under it)
+[6.302s] Copying ../../build/navigation/navigation.egg-info to /home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages/navigation-0.0.0-py3.10.egg-info
+[6.313s] running install_scripts
+[6.443s] Installing navigation_node script to /home/ubuntu/CS_ws/install/navigation/lib/navigation
+[6.447s] writing list of installed files to '/home/ubuntu/CS_ws/build/navigation/install.log'
+[6.549s] Invoked command in '/home/ubuntu/CS_ws/src/navigation' returned '0': PYTHONPATH=/home/ubuntu/CS_ws/build/navigation/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/home/ubuntu/CS_ws/install/navigation/lib/python3.10/site-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated -W ignore:easy_install command is deprecated setup.py egg_info --egg-base ../../build/navigation build --build-base /home/ubuntu/CS_ws/build/navigation/build install --record /home/ubuntu/CS_ws/build/navigation/install.log --single-version-externally-managed install_data

@@ -1,0 +1,3 @@
+[console_scripts]
+testserver_node = testserver.testserver_node:main
+
